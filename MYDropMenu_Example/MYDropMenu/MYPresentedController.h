@@ -16,7 +16,7 @@ typedef void(^handleBack)(id callback);
 //创建菜单
 - (instancetype)initWithShowFrame:(CGRect)showFrame ShowStyle:(MYPresentedViewShowStyle)showStyle callback:(handleBack)callback;
 //是否展开
-@property (nonatomic, assign,getter=isPresented) BOOL presented;
+@property (nonatomic, assign,getter=isPresented,readonly) BOOL presented;
 //是否需要显示透明蒙板
 @property (nonatomic, assign,getter=isNeedClearBack) BOOL clearBack;
 //回调
